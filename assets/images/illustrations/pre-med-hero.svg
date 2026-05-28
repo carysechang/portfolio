@@ -1,0 +1,18 @@
+<svg width="720" height="640" viewBox="0 0 720 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="640" rx="32" fill="#EAF4F6"/>
+  <circle cx="552" cy="140" r="72" fill="#CDE7EC"/>
+  <circle cx="154" cy="508" r="92" fill="#D9ECF0"/>
+  <rect x="132" y="128" width="456" height="360" rx="28" fill="white"/>
+  <rect x="172" y="182" width="180" height="24" rx="12" fill="#4F7D8A"/>
+  <rect x="172" y="226" width="260" height="18" rx="9" fill="#A7C8CF"/>
+  <rect x="172" y="260" width="220" height="18" rx="9" fill="#A7C8CF"/>
+  <rect x="172" y="322" width="132" height="132" rx="20" fill="#F3FAFB"/>
+  <path d="M238 352V424" stroke="#4F7D8A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M202 388H274" stroke="#4F7D8A" stroke-width="18" stroke-linecap="round"/>
+  <rect x="336" y="332" width="210" height="16" rx="8" fill="#7AA8B3"/>
+  <rect x="336" y="366" width="170" height="16" rx="8" fill="#B9D6DC"/>
+  <rect x="336" y="400" width="146" height="16" rx="8" fill="#B9D6DC"/>
+  <path d="M478 120C478 99.0132 495.013 82 516 82H552C572.987 82 590 99.0132 590 120V156C590 176.987 572.987 194 552 194H516C495.013 194 478 176.987 478 156V120Z" fill="#4F7D8A"/>
+  <path d="M534 101L540.841 114.861L556 117.063L545 127.784L547.595 142.937L534 135.79L520.405 142.937L523 127.784L512 117.063L527.159 114.861L534 101Z" fill="white"/>
+  <text x="174" y="532" fill="#4F7D8A" font-family="Arial, sans-serif" font-size="28" font-weight="700">Research. Service. Growth.</text>
+</svg>

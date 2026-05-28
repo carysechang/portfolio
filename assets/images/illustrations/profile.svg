@@ -1,0 +1,17 @@
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="640" rx="32" fill="#F4F9FA"/>
+  <circle cx="320" cy="230" r="112" fill="#D6EAEE"/>
+  <path d="M224 514C224 449.935 275.935 398 340 398H346C410.065 398 462 449.935 462 514V544H224V514Z" fill="#4F7D8A"/>
+  <circle cx="320" cy="228" r="82" fill="#FFE7D2"/>
+  <path d="M252 214C252 171.562 286.562 137 329 137C365.451 137 396.13 162.377 404.274 196.389C387.79 186.734 365.836 181 341.5 181C301.714 181 268.299 196.32 255.211 217.385C253.1 216.349 252 215.127 252 214Z" fill="#223D56"/>
+  <path d="M272 291C286.667 305.667 302.667 313 320 313C337.333 313 353.333 305.667 368 291" stroke="#C36E5A" stroke-width="8" stroke-linecap="round"/>
+  <rect x="96" y="88" width="168" height="72" rx="18" fill="white"/>
+  <text x="124" y="132" fill="#4F7D8A" font-family="Arial, sans-serif" font-size="28" font-weight="700">Pre-Med</text>
+  <rect x="386" y="104" width="162" height="60" rx="18" fill="white"/>
+  <text x="416" y="141" fill="#4F7D8A" font-family="Arial, sans-serif" font-size="24" font-weight="700">Portfolio</text>
+  <rect x="112" y="468" width="84" height="84" rx="18" fill="white"/>
+  <path d="M138 510H170" stroke="#4F7D8A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M154 494V526" stroke="#4F7D8A" stroke-width="10" stroke-linecap="round"/>
+  <rect x="444" y="468" width="84" height="84" rx="18" fill="white"/>
+  <path d="M468 520L484 500L504 526" stroke="#4F7D8A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

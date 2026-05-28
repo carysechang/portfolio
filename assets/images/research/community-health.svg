@@ -1,0 +1,17 @@
+<svg width="920" height="620" viewBox="0 0 920 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="920" height="620" rx="32" fill="#F6FAFB"/>
+  <circle cx="240" cy="204" r="78" fill="#D7EAEE"/>
+  <circle cx="456" cy="184" r="94" fill="#E7F2F5"/>
+  <circle cx="682" cy="214" r="78" fill="#D7EAEE"/>
+  <rect x="124" y="286" width="672" height="188" rx="28" fill="white"/>
+  <path d="M240 220C262.091 220 280 202.091 280 180C280 157.909 262.091 140 240 140C217.909 140 200 157.909 200 180C200 202.091 217.909 220 240 220Z" fill="#4F7D8A"/>
+  <path d="M192 276C192 242.863 218.863 216 252 216H228C261.137 216 288 242.863 288 276V292H192V276Z" fill="#4F7D8A"/>
+  <path d="M456 238C486.928 238 512 212.928 512 182C512 151.072 486.928 126 456 126C425.072 126 400 151.072 400 182C400 212.928 425.072 238 456 238Z" fill="#7AA8B3"/>
+  <path d="M388 316C388 269.056 426.056 231 473 231H439C485.944 231 524 269.056 524 316V338H388V316Z" fill="#7AA8B3"/>
+  <path d="M682 220C704.091 220 722 202.091 722 180C722 157.909 704.091 140 682 140C659.909 140 642 157.909 642 180C642 202.091 659.909 220 682 220Z" fill="#4F7D8A"/>
+  <path d="M634 276C634 242.863 660.863 216 694 216H670C703.137 216 730 242.863 730 276V292H634V276Z" fill="#4F7D8A"/>
+  <rect x="174" y="344" width="222" height="16" rx="8" fill="#4F7D8A"/>
+  <rect x="174" y="376" width="422" height="14" rx="7" fill="#BCD9E0"/>
+  <rect x="174" y="406" width="346" height="14" rx="7" fill="#BCD9E0"/>
+  <text x="174" y="86" fill="#4F7D8A" font-family="Arial, sans-serif" font-size="34" font-weight="700">Community Health Project</text>
+</svg>

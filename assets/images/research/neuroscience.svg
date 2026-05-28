@@ -1,0 +1,16 @@
+<svg width="920" height="620" viewBox="0 0 920 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="920" height="620" rx="32" fill="#F2F8FA"/>
+  <rect x="112" y="116" width="696" height="388" rx="28" fill="white"/>
+  <circle cx="266" cy="214" r="36" fill="#4F7D8A"/>
+  <circle cx="396" cy="188" r="28" fill="#7AA8B3"/>
+  <circle cx="520" cy="244" r="34" fill="#7AA8B3"/>
+  <circle cx="646" cy="204" r="40" fill="#4F7D8A"/>
+  <circle cx="338" cy="324" r="26" fill="#A8CDD5"/>
+  <circle cx="494" cy="346" r="26" fill="#A8CDD5"/>
+  <circle cx="624" cy="320" r="22" fill="#A8CDD5"/>
+  <path d="M266 214L396 188L520 244L646 204" stroke="#4F7D8A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M396 188L338 324L494 346L624 320L646 204" stroke="#7AA8B3" stroke-width="8" stroke-linecap="round"/>
+  <rect x="176" y="416" width="240" height="18" rx="9" fill="#4F7D8A"/>
+  <rect x="176" y="448" width="420" height="14" rx="7" fill="#B7D6DD"/>
+  <text x="174" y="82" fill="#4F7D8A" font-family="Arial, sans-serif" font-size="34" font-weight="700">Neuroscience Research</text>
+</svg>
