@@ -6,14 +6,15 @@ draft = false
 
 {{< showcase-section
     sectionId="home"
-    title="Caryse"
-    subtitle="Pre-med undergraduate exploring neuroscience, community health, and compassionate care"
+    title="Caryse Chang"
+    subtitle="Pre-med student exploring genetics, community health, and compassionate care"
     button_text="View Resume"
     button_url="/cv"
     button_icon="icon-file-text"
-    description="This Hugo site is set up as a personal academic portfolio for sharing interests, research, service, and experience. Replace the sample details below with your real school, roles, and accomplishments as you build toward medical school."
-    imgSrc="images/illustrations/pre-med-hero.svg"
-    imgShape="rounded"
+    description="This website is a personal academic portfolio for me to share my interests, projects, community service, and experience."
+    imgSrc="images/illustrations/caryse-profile.jpg"
+    imgWidth="560"
+    imgShape="circle"
 >}}
 {{< /showcase-section >}}
 
@@ -39,26 +40,31 @@ draft = false
 
 {{< education-list title="Education" sectionId="education" >}}
 
+{{< projects-section
+    sectionId="projects"
+    intro_title="Research and projects"
+    intro_description="Published research and selected project work across bioengineering, data science, and community health. Click any entry to read more."
+    button_research_url="/projects/research/"
+    button_research_text="View all research papers"
+    button_projects_url="/projects/"
+    button_projects_text="View all projects"
+>}}
+
 {{< experience-section
     sectionId="experience"
     title="Experience"
     intro_title="Clinical, service, and leadership growth"
-    intro_description="Use this section to summarize the roles that have shaped your interest in medicine. The sample entries are intentionally written as editable starter content so you can swap in real organizations, mentors, and measurable impact."
+    intro_description="Roles across volunteering, research, and leadership that have shaped my interest in medicine. Click any entry to read more."
     button1_url="/cv"
     button1_text="Open Resume"
     button1_icon="icon-file-text"
-    hideViewAll="true"
->}}
-
-{{< client-and-work-section
-    sectionId="research"
-    title="Research & Projects"
+    button3_url="/experience/"
+    button3_text="View all experience"
+    button3_icon="icon-arrow-right"
 >}}
 
 {{< text-section sectionId="contact" title="Contact" >}}
-Reach out through the channels below once you replace the placeholders with your real information.
-
-- Email: [your.email@example.com](mailto:your.email@example.com)
-- LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
-- Resume: [Printable CV](/cv)
+- Email: [carysechang@gmail.com](mailto:carysechang@gmail.com)
+- LinkedIn: [linkedin.com/in/caryse-chang-92b24230b](https://www.linkedin.com/in/caryse-chang-92b24230b)
+- Resume: [See here](/cv)
 {{< /text-section >}}

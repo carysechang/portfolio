@@ -1,0 +1,60 @@
+.education {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 131px;
+  padding-left: 0;
+}
+
+.education::before {
+  left: 90px;
+}
+
+.education__logo {
+  position: relative;
+  z-index: 2;
+  flex: 0 0 75px;
+  width: 75px;
+  height: 75px;
+  margin-right: 16px;
+}
+
+.education__logo picture,
+.education__logo img {
+  display: block;
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.education__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 0;
+}
+
+.education__degree {
+  line-height: 1.5;
+}
+
+@media (max-width: 575px) {
+  .education {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education::before {
+    display: none;
+  }
+
+  .education__logo {
+    margin-bottom: 12px;
+  }
+}

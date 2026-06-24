@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Campolindo Cougar mascot">
+  <rect width="120" height="120" rx="8" fill="#002855"/>
+  <path fill="#CC0000" d="M18 38 L30 18 L42 38 Z"/>
+  <path fill="#CC0000" d="M78 38 L90 18 L102 38 Z"/>
+  <ellipse cx="60" cy="62" rx="34" ry="30" fill="#E8C99B"/>
+  <ellipse cx="60" cy="68" rx="22" ry="18" fill="#F5E6D3"/>
+  <circle cx="48" cy="58" r="4" fill="#002855"/>
+  <circle cx="72" cy="58" r="4" fill="#002855"/>
+  <path fill="#002855" d="M54 72 Q60 78 66 72 L64 76 Q60 80 56 76 Z"/>
+  <path fill="none" stroke="#002855" stroke-width="2" d="M38 68 Q30 74 26 82"/>
+  <path fill="none" stroke="#002855" stroke-width="2" d="M82 68 Q90 74 94 82"/>
+  <text x="60" y="108" text-anchor="middle" fill="#fff" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700">COUGARS</text>
+</svg>

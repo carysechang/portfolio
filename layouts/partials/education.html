@@ -1,0 +1,46 @@
+{{- $contextType := printf "%T" . -}}
+{{- $isShortcode := (eq $contextType "*hugolib.ShortcodeWithPage") -}}
+
+{{ $sectionId := "education" }}
+{{ with .Get "sectionId" }}
+  {{ $sectionId = . }}
+{{ end }}
+
+{{- $title := "" -}}
+{{- if $isShortcode }}
+  {{- $title = .Get "title" | default ( i18n "education_title" ) -}}
+{{ else }}
+  {{- $title = i18n "education_title" -}}
+{{ end }}
+
+<section
+  id="{{ $sectionId }}"
+  class="section section--border-bottom rad-animation-group"
+>
+  <div class="container-education">
+    <div class="row rad-fade-down">
+      <div class="col-12">
+        <h2>{{ $title }}</h2>
+        <div class="row pt-2 pt-md-4">
+          {{ range (where .Site.RegularPages "Type" "education").ByDate }}
+          {{ $entry := . }}
+          <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+            <div class="education">
+              {{ with .Params.imgSrc }}
+              <div class="education__logo">
+                {{ partial "lazypicture.html" (dict "src" . "alt" (printf "%s mascot" $entry.Params.university) "class" "education__logo-img") }}
+              </div>
+              {{ end }}
+              <div class="education__content">
+                <div class="education__date">{{ $entry.Params.year }}</div>
+                <div class="education__title">{{ $entry.Params.university }}</div>
+                <div class="education__degree">{{ $entry.Params.degree }}</div>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

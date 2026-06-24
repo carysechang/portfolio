@@ -1,0 +1,122 @@
+{{ $contextType := printf "%T" . }}
+{{ $isShortcode := (eq $contextType "*hugolib.ShortcodeWithPage") }}
+
+{{ $sectionId := "projects" }}
+{{ if $isShortcode }}
+  {{ with .Get "sectionId" }}
+    {{ $sectionId = . }}
+  {{ end }}
+{{ end }}
+
+{{ $researchPages := where (where .Site.RegularPages "Section" "projects") "Params.category" "research" }}
+{{ $researchPages = sort $researchPages "Date" "desc" }}
+
+{{ $allProjects := where (where .Site.RegularPages "Section" "projects") "Params.category" "project" }}
+{{ $featuredProjects := slice }}
+{{ range $allProjects }}
+  {{ if .Params.featured }}
+    {{ $featuredProjects = $featuredProjects | append . }}
+  {{ end }}
+{{ end }}
+{{ $featuredProjects = sort $featuredProjects "Date" "desc" }}
+{{ $homepageProjectCount := default 2 .Site.Params.homepageProjectCount }}
+{{ $homepageProjectCount = int $homepageProjectCount }}
+{{ $shownProjects := first $homepageProjectCount $featuredProjects }}
+{{ $projectCount := len $allProjects }}
+{{ $shownProjectCount := len $shownProjects }}
+{{ $remainingProjects := sub $projectCount $shownProjectCount }}
+
+{{ $introTitle := "" }}
+{{ $introDescription := "" }}
+{{ if $isShortcode }}
+  {{ $introTitle = .Get "intro_title" | default "Research and projects" }}
+  {{ $introDescription = .Get "intro_description" | default "Published research and selected project work. Click any entry to read more." | safeHTML }}
+{{ else }}
+  {{ $introTitle = "Research and projects" }}
+  {{ $introDescription = "Published research and selected project work. Click any entry to read more." | safeHTML }}
+{{ end }}
+
+{{ $btnResearchURL := "/projects/research/" }}
+{{ $btnResearchText := "View all research papers" }}
+{{ $btnProjectsURL := "/projects/" }}
+{{ $btnProjectsText := "View all projects" }}
+{{ if $isShortcode }}
+  {{ with .Get "button_research_url" }}{{ $btnResearchURL = . }}{{ end }}
+  {{ with .Get "button_research_text" }}{{ $btnResearchText = . }}{{ end }}
+  {{ with .Get "button_projects_url" }}{{ $btnProjectsURL = . }}{{ end }}
+  {{ with .Get "button_projects_text" }}{{ $btnProjectsText = . }}{{ end }}
+{{ end }}
+
+<section {{ if $sectionId }}id="{{ $sectionId }}"{{ end }} class="section-projects section-experience section section--border-bottom rad-animation-group flex-grow-1">
+  <div class="row flex-column-reverse flex-md-row rad-fade-down">
+    <div class="experience-list col-12 col-md-6">
+      <h3 class="projects-subsection-title">Research Papers</h3>
+      {{ range $researchPages }}
+      <div class="experience">
+        <a href="{{ .Permalink | relURL }}" class="experience__link">
+          <div class="experience__header no-company-logo">
+            <div class="experience__meta">
+              <div class="experience__date">{{ .Params.duration }}</div>
+              <div class="experience__title">{{ .Title }}</div>
+              <div class="experience__company">
+                {{ with .Params.publication }}
+                  {{ . }}
+                {{ else }}
+                  {{ .Params.subtitle }}
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+
+      <h3 class="projects-subsection-title">Projects</h3>
+      {{ range $shownProjects }}
+      <div class="experience">
+        <a href="{{ .Permalink | relURL }}" class="experience__link">
+          <div class="experience__header no-company-logo">
+            <div class="experience__meta">
+              <div class="experience__date">{{ .Params.duration }}</div>
+              <div class="experience__title">{{ .Title }}</div>
+              <div class="experience__company">{{ .Params.subtitle }}</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+
+      {{ if gt $remainingProjects 0 }}
+      <div class="all-experience-container">
+        <em>And {{ $remainingProjects }} more</em><br />
+        <a href="{{ $btnProjectsURL | relURL }}" class="btn btn-primary btn-all-experience">
+          <i class="icon-arrow-right"></i>
+          {{ $btnProjectsText }}
+        </a>
+      </div>
+      {{ end }}
+    </div>
+    <div class="experience-description col-12 col-md-6">
+      <div class="container-experience">
+        <div class="row">
+          <h2>{{ $introTitle }}</h2>
+          <div class="lead">{{ $introDescription }}</div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <a href="{{ $btnResearchURL | relURL }}" class="btn btn-frameless w-100">
+              <i class="icon-arrow-right"></i>
+              {{ $btnResearchText }}
+            </a>
+          </div>
+          <div class="col-12 col-lg-6">
+            <a href="{{ $btnProjectsURL | relURL }}" class="btn btn-frameless w-100">
+              <i class="icon-arrow-right"></i>
+              {{ $btnProjectsText }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

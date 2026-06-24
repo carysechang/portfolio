@@ -1,0 +1,22 @@
+{{ $posterSrc := .src }}
+{{ $posterScale := .scale | default 1 }}
+{{ $posterWidth := .width | default 0 }}
+{{ $posterHeight := .height | default 0 }}
+{{ $posterAlt := .alt }}
+{{ $fullPosterSrc := $posterSrc }}
+{{ $img := resources.Get $posterSrc }}
+{{ if $img }}
+  {{ $fullPosterSrc = $img.RelPermalink }}
+{{ end }}
+
+<div class="project-detail__poster" data-poster-src="{{ $fullPosterSrc | absURL }}">
+  <div class="project-detail__poster-header">
+    <h3 class="h5 mb-0">Poster</h3>
+    <button type="button" class="btn btn-frameless btn-sm project-poster-fullscreen" aria-label="View poster full screen">
+      View full screen
+    </button>
+  </div>
+  <button type="button" class="project-poster-trigger" aria-label="View poster full screen">
+    {{ partial "lazypicture" (dict "src" $posterSrc "width" $posterWidth "height" $posterHeight "scale" $posterScale "class" "project-poster img-responsive" "alt" $posterAlt) }}
+  </button>
+</div>

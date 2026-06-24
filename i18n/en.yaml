@@ -1,0 +1,23 @@
+- id: "meta_title"
+  translation: "Caryse's Portfolio"
+
+- id: "meta_description"
+  translation: "Personal academic portfolio showcasing research, projects, experience, and education."
+
+- id: "logo_alt"
+  translation: "Caryse's Portfolio"
+
+- id: "logo_text1"
+  translation: "Caryse's"
+
+- id: "logo_text2"
+  translation: "Portfolio"
+
+- id: "head_title"
+  translation: "Caryse's Portfolio"
+
+- id: "head_description"
+  translation: "Personal academic portfolio showcasing research, projects, experience, and education."
+
+- id: "footer_notice"
+  translation: "© Caryse Chang."

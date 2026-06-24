@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --resume-blue: #2079c7;
+  --resume-body: #666666;
+  --resume-black: #000000;
+}
+
+body.page-cv #content .resume-doc {
+  max-width: 8.5in;
+  margin: 0 auto;
+  font-family: "Merriweather", Georgia, "Times New Roman", serif;
+  color: var(--resume-body);
+  font-size: 9pt;
+  line-height: 1.45;
+}
+
+body.page-cv #content .resume-doc .resume-name {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 36pt;
+  font-weight: 700;
+  color: var(--resume-black);
+  line-height: 1.1;
+  margin: 0 0 0.35rem;
+}
+
+body.page-cv #content .resume-doc .resume-contact {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 9pt;
+  color: var(--resume-black);
+  margin: 0 0 1.25rem;
+}
+
+body.page-cv #content .resume-doc .resume-contact a {
+  color: var(--resume-black);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+body.page-cv #content .resume-doc .resume-section {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+  color: var(--resume-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 1.1rem 0 0.55rem;
+  padding-bottom: 0.15rem;
+  border-bottom: 1px solid rgba(32, 121, 199, 0.35);
+}
+
+body.page-cv #content .resume-doc .resume-entry {
+  margin-bottom: 0.85rem;
+}
+
+body.page-cv #content .resume-doc .resume-role {
+  margin: 0 0 0.1rem;
+  font-size: 11pt;
+  line-height: 1.35;
+  color: var(--resume-black);
+}
+
+body.page-cv #content .resume-doc .resume-org {
+  font-weight: 700;
+}
+
+body.page-cv #content .resume-doc .resume-title {
+  font-style: italic;
+  font-weight: 700;
+}
+
+body.page-cv #content .resume-doc .resume-date {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 8pt;
+  color: var(--resume-body);
+  margin: 0 0 0.35rem;
+}
+
+body.page-cv #content .resume-doc .resume-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+body.page-cv #content .resume-doc .resume-list > li {
+  margin-bottom: 0.25rem;
+}
+
+body.page-cv #content .resume-doc .resume-list ul {
+  margin: 0.2rem 0 0.35rem;
+  padding-left: 1.25rem;
+  list-style-type: circle;
+}
+
+body.page-cv #content .resume-doc .resume-skills {
+  font-size: 9pt;
+  margin: 0;
+}
+
+body.page-cv #content .resume-doc .resume-award-title {
+  font-size: 11pt;
+  font-weight: 700;
+  color: var(--resume-black);
+  margin: 0 0 0.15rem;
+}
+
+body.page-cv #content .resume-doc .resume-download {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 8pt;
+  margin: 0 0 1rem;
+}
+
+body.page-cv #content .resume-doc .resume-download a {
+  color: var(--resume-blue);
+  text-decoration: underline;
+}
+
+@media print {
+  body.page-cv #content .resume-doc,
+  body.page-cv #content .resume-doc .resume-section,
+  body.page-cv #content .resume-doc .resume-contact a,
+  body.page-cv #content .resume-doc .resume-download a {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body.page-cv #content .resume-doc .resume-section {
+    color: var(--resume-blue) !important;
+  }
+}

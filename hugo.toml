@@ -1,5 +1,5 @@
 baseURL = "http://localhost:1313/"
-title = "Caryse | Pre-Med Portfolio"
+title = "Caryse's Portfolio"
 languageCode = "en-us"
 disableKinds = ["taxonomy", "term"]
 
@@ -46,23 +46,55 @@ target = "assets/js/vendor/bootstrap.bundle.min.js"
 source = "node_modules/bootstrap-print-css/css/bootstrap-print.css"
 target = "assets/css/bootstrap-print.css"
 
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
-title = "Caryse"
+title = "Caryse's Portfolio"
 description = "A Hugo starter site for a pre-med undergraduate to showcase interests, research, and experience."
 themeColor = "#4f7d8a"
 colorScheme = "ocean"
 homepageExperienceCount = 3
+homepageProjectCount = 2
+
+[params.plugins]
+[[params.plugins.css]]
+URL = "css/adritian-icons.css"
+[[params.plugins.css]]
+URL = "css/bootstrap-print.css"
+[[params.plugins.css]]
+URL = "css/cv-resume.css"
+[[params.plugins.css]]
+URL = "css/education.css"
+[[params.plugins.css]]
+URL = "css/nav-dropdown.css"
+[[params.plugins.css]]
+URL = "css/site-overrides.css"
+
+[[params.plugins.scss]]
+URL = "scss/adritian.scss"
+
+[[params.plugins.js]]
+URL = "js/rad-animations.js"
+[[params.plugins.js]]
+URL = "js/sticky-header.js"
+[[params.plugins.js]]
+URL = "js/library/fontfaceobserver.js"
+[[params.plugins.js]]
+URL = "js/poster-lightbox.js"
 
 [params.colorSchemeSwitcher]
 enable = false
 
 [params.seo]
-siteName = "Caryse | Pre-Med Portfolio"
+siteName = "Caryse's Portfolio"
 siteDescription = "A personal academic portfolio built with Hugo for a pre-med undergraduate."
 
 [params.seo.person]
 name = "Caryse"
-sections = ["home", "about", "education", "experience", "research", "interests", "contact"]
+sections = ["home", "about", "education", "experience", "projects", "interests", "contact"]
 
 [params.analytics]
 vercelPageInsights = false
@@ -97,7 +129,7 @@ disabled = false
 languageCode = "en"
 languageDirection = "ltr"
 languageName = "English"
-title = ""
+title = "Caryse's Portfolio"
 weight = 1
 
 [languages.en.menus]
@@ -112,9 +144,22 @@ URL = "/#about"
 weight = 2
 
 [[languages.en.menus.header]]
-name = "Research"
-URL = "/#research"
+name = "Projects"
+identifier = "projects"
+URL = "/#projects"
 weight = 3
+
+[[languages.en.menus.header]]
+name = "Research Papers"
+parent = "projects"
+URL = "/projects/research/"
+weight = 1
+
+[[languages.en.menus.header]]
+name = "All projects"
+parent = "projects"
+URL = "/projects/"
+weight = 2
 
 [[languages.en.menus.header]]
 name = "Experience"
@@ -137,16 +182,21 @@ URL = "/"
 weight = 1
 
 [[languages.en.menus.footer]]
-name = "Research"
-URL = "/#research"
+name = "Research & Projects"
+URL = "/projects/"
 weight = 2
+
+[[languages.en.menus.footer]]
+name = "Research"
+URL = "/projects/research/"
+weight = 3
 
 [[languages.en.menus.footer]]
 name = "Resume"
 URL = "/cv"
-weight = 3
+weight = 4
 
 [[languages.en.menus.footer]]
 name = "Contact"
 URL = "/#contact"
-weight = 4
+weight = 5

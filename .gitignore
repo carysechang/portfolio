@@ -4,3 +4,20 @@ resources/
 hugo_stats.json
 .hugo_build.lock
 .DS_Store
+
+.bin/
+.go/
+.Rhistory
+
+# Obsidian user-specific state (vault config in .obsidian/ is kept)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/hotkeys.json
+.obsidian/graph.json
+.obsidian/cache
+
+# Local Google Docs exports (site uses static/files/ instead)
+/Achievements _ Peloton.pdf
+/Caryse Chang *.pdf
+/Experiences - Google Docs.pdf
+/Projects - Google Docs.pdf

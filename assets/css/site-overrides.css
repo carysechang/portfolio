@@ -1,0 +1,244 @@
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 992px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.rad-showcase + .section {
+  margin-top: 48px;
+}
+
+@media (min-width: 1200px) {
+  .rad-showcase + .section {
+    margin-top: 32px;
+  }
+}
+
+.showcase-hero-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .showcase-hero-intro {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+.showcase-hero-photo {
+  flex: 0 0 auto;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase-hero-photo picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.showcase-hero-photo picture,
+.showcase-hero-photo img {
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  object-fit: cover;
+  object-position: 40% 18%;
+}
+
+.showcase-hero-photo.profile-image--circle {
+  border-radius: 50%;
+}
+
+.showcase-hero-photo.profile-image--circle picture,
+.showcase-hero-photo.profile-image--circle img {
+  border-radius: 50%;
+}
+
+.showcase-hero-copy {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.showcase-hero-copy h1,
+.showcase-hero-copy h2 {
+  margin-bottom: 0.75rem;
+}
+
+.showcase-hero-description {
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .showcase-hero-photo {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .showcase-hero-photo {
+    width: 340px;
+    height: 340px;
+  }
+
+  .showcase-hero-intro {
+    gap: 3.5rem;
+  }
+}
+
+.projects-subsection-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-projects .experience-list > .projects-subsection-title:first-child {
+  margin-top: 0;
+}
+
+.project-detail--with-poster {
+  align-items: flex-start;
+  gap: 1.5rem 0;
+}
+
+.project-detail__content {
+  margin-bottom: 2rem;
+}
+
+.project-resources {
+  margin-top: 1.5rem;
+}
+
+.project-resources ul {
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+}
+
+.project-video {
+  margin-top: 1.5rem;
+}
+
+.project-paper {
+  margin-top: 1.5rem;
+}
+
+.project-paper__actions {
+  margin-bottom: 1rem;
+}
+
+.project-paper__viewer {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  height: min(80vh, 720px);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  background: #fff;
+}
+
+.project-video__embed {
+  max-width: 720px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.project-detail__poster {
+  margin-top: 0.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #dbe0e4;
+}
+
+.project-detail__poster-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-poster-trigger {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.project-detail__poster picture,
+.project-detail__poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.poster-lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.88);
+}
+
+.poster-lightbox-overlay.poster-lightbox-active {
+  display: flex;
+}
+
+.poster-lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.poster-lightbox-close:hover,
+.poster-lightbox-close:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.poster-lightbox-img {
+  max-width: min(96vw, 1400px);
+  max-height: 92vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}

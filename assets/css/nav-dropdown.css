@@ -1,0 +1,79 @@
+@media (min-width: 992px) {
+  .header .navbar .nav-item.nav-dropdown-hover:hover .dropdown-menu,
+  .header .navbar .nav-item.nav-dropdown-hover:focus-within .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+
+  .header .navbar .nav-item.nav-dropdown-hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+  }
+
+  .header .navbar .nav-item.nav-dropdown-hover .nav-link-dropdown__label,
+  .header .navbar .nav-item.nav-dropdown-hover .nav-link-dropdown__toggle {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: auto;
+    white-space: nowrap;
+  }
+
+  .header .navbar .nav-item.nav-dropdown-hover .nav-link-dropdown__label {
+    padding-right: 0;
+  }
+
+  .header .navbar .nav-item.nav-dropdown-hover .nav-link-dropdown__toggle {
+    padding-left: 0.15rem;
+    padding-right: 0;
+    min-width: 0.85rem;
+  }
+
+  .header .navbar .nav-item.nav-dropdown-hover .nav-link-dropdown__toggle::after {
+    margin-left: 0;
+    vertical-align: middle;
+  }
+}
+
+.header .navbar .nav-item.nav-dropdown-hover .dropdown-menu {
+  border-radius: 0;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  min-width: 10rem;
+}
+
+.header .navbar .nav-item.nav-dropdown-hover .dropdown-item {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.65rem 1rem;
+}
+
+.header .navbar .nav-item.nav-dropdown-hover .dropdown-item:hover,
+.header .navbar .nav-item.nav-dropdown-hover .dropdown-item:focus {
+  background-color: rgba(71, 128, 121, 0.1);
+}
+
+@media (max-width: 991.98px) {
+  .header .navbar .nav-item.nav-dropdown-hover {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  .header .navbar .nav-item.nav-dropdown-hover .nav-link-dropdown__label,
+  .header .navbar .nav-item.nav-dropdown-hover .nav-link-dropdown__toggle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+  }
+
+  .header .navbar .nav-item.nav-dropdown-hover .nav-link-dropdown__toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3rem;
+  }
+}
