@@ -21,7 +21,7 @@ draft = false
 {{< about-section
     sectionId="about"
     title="About"
-    content="I am building a path toward medicine through a combination of rigorous coursework, research curiosity, and service-focused experiences. This starter site is organized to help me present a clear professional story: what I care about, how I am growing, and where I hope to contribute next.<br><br>Use this section to introduce your school, major, expected graduation year, and the personal motivations that shaped your interest in medicine."
+    content="Hi! I'm Caryse Chang, an incoming freshman at Occidental College majoring in Biology on the pre-med track.<br><br>I'm passionate about biology, particularly genetics and biotechnology, and have experience conducting computational biology and data science research. I enjoy exploring complex scientific questions and discovering connections across different fields.<br><br>Outside of academics, I enjoy playing the cello in orchestras and chamber ensembles, volunteering in healthcare settings, mentoring students, and running long-distance races.<br><br>Whether I'm analyzing research data, working with patients, mentoring young musicians, or training for my next race, I'm driven by a commitment to learning, service, and making a positive impact in my community."
     button_icon="icon-file-text"
     button_text="Printable CV"
     button_url="/cv"
@@ -60,6 +60,26 @@ draft = false
     button1_icon="icon-file-text"
     button3_url="/experience/"
     button3_text="View all experience"
+    button3_icon="icon-arrow-right"
+>}}
+
+{{< awards-section
+    sectionId="awards-honors"
+    title="Awards & Honors"
+    intro_title="Recognition for achievement and service"
+    intro_description="Academic, research, service, and leadership honors. Click any entry to read more."
+    button3_url="/awards/"
+    button3_text="View all awards"
+    button3_icon="icon-arrow-right"
+>}}
+
+{{< certifications-section
+    sectionId="certifications"
+    title="Certifications"
+    intro_title="Professional training and credentials"
+    intro_description="Certifications and specialized coursework in biotechnology, healthcare, and cancer biology. Click any entry to read more."
+    button3_url="/certifications/"
+    button3_text="View all certifications"
     button3_icon="icon-arrow-right"
 >}}
 

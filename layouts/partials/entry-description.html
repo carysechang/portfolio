@@ -1,0 +1,77 @@
+{{ $ctx := .context }}
+{{ $sectionType := .sectionType }}
+
+{{ $contextType := printf "%T" $ctx }}
+{{ $isShortcode := (eq $contextType "*hugolib.ShortcodeWithPage") }}
+
+{{ $introTitle := "" }}
+{{ $introDescription := "" }}
+{{ $btn1Enable := false }}
+{{ $btn1Icon := "" }}
+{{ $btn1URL := "" }}
+{{ $btn1Text := "" }}
+{{ $btn3Enable := false }}
+{{ $btn3Icon := "" }}
+{{ $btn3URL := "" }}
+{{ $btn3Text := "" }}
+
+{{ if $isShortcode }}
+  {{ $introTitle = $ctx.Get "intro_title" | default "" }}
+  {{ $introDescription = $ctx.Get "intro_description" | default "" | safeHTML }}
+  {{ if $ctx.Get "button1_url" }}
+    {{ $btn1Enable = true }}
+    {{ $btn1Icon = $ctx.Get "button1_icon" }}
+    {{ $btn1URL = $ctx.Get "button1_url" }}
+    {{ $btn1Text = $ctx.Get "button1_text" }}
+  {{ end }}
+  {{ if $ctx.Get "button3_url" }}
+    {{ $btn3Enable = true }}
+    {{ $btn3Icon = $ctx.Get "button3_icon" | default "icon-arrow-right" }}
+    {{ $btn3URL = $ctx.Get "button3_url" }}
+    {{ $btn3Text = $ctx.Get "button3_text" | default (printf "View all %s" $sectionType) }}
+  {{ end }}
+{{ else }}
+  {{ $introTitle = $ctx.Title }}
+  {{ $introDescription = $ctx.Content | safeHTML }}
+  {{ with $ctx.Params.button1_url }}
+    {{ $btn1Enable = true }}
+    {{ $btn1Icon = $ctx.Params.button1_icon }}
+    {{ $btn1URL = . }}
+    {{ $btn1Text = $ctx.Params.button1_text }}
+  {{ end }}
+  {{ with $ctx.Params.button3_url }}
+    {{ $btn3Enable = true }}
+    {{ $btn3Icon = $ctx.Params.button3_icon | default "icon-arrow-right" }}
+    {{ $btn3URL = . }}
+    {{ $btn3Text = $ctx.Params.button3_text | default (printf "View all %s" $sectionType) }}
+  {{ end }}
+{{ end }}
+
+<div class="container-experience">
+  <div class="row">
+    <h2>{{ $introTitle }}</h2>
+    <div class="lead">{{ $introDescription }}</div>
+  </div>
+
+  {{ if or $btn1Enable $btn3Enable }}
+  <div class="row">
+    {{ if $btn1Enable }}
+    <div class="col-12 col-lg-4">
+      <a href="{{ $btn1URL | relURL }}" class="btn btn-primary btn-block w-100">
+        {{ with $btn1Icon }}<i class="{{ . }}"></i>{{ end }}
+        {{ $btn1Text }}
+        <i class="icon-arrow-right"></i>
+      </a>
+    </div>
+    {{ end }}
+    {{ if $btn3Enable }}
+    <div class="col-12 col-lg-4">
+      <a href="{{ $btn3URL | relURL }}" class="btn btn-frameless w-100">
+        {{ with $btn3Icon }}<i class="{{ . }}"></i>{{ end }}
+        {{ $btn3Text }}
+      </a>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>

@@ -57,6 +57,8 @@ description = "A Hugo starter site for a pre-med undergraduate to showcase inter
 themeColor = "#4f7d8a"
 colorScheme = "ocean"
 homepageExperienceCount = 3
+homepageAwardsCount = 3
+homepageCertificationsCount = 3
 homepageProjectCount = 2
 
 [params.plugins]
@@ -94,7 +96,7 @@ siteDescription = "A personal academic portfolio built with Hugo for a pre-med u
 
 [params.seo.person]
 name = "Caryse"
-sections = ["home", "about", "education", "experience", "projects", "interests", "contact"]
+sections = ["home", "about", "education", "experience", "projects", "interests", "awards-honors", "certifications", "contact"]
 
 [params.analytics]
 vercelPageInsights = false
@@ -167,14 +169,32 @@ URL = "/#experience"
 weight = 4
 
 [[languages.en.menus.header]]
+name = "More"
+identifier = "more"
+URL = "/#awards-honors"
+weight = 5
+
+[[languages.en.menus.header]]
+name = "Awards & Honors"
+parent = "more"
+URL = "/#awards-honors"
+weight = 1
+
+[[languages.en.menus.header]]
+name = "Certifications"
+parent = "more"
+URL = "/#certifications"
+weight = 2
+
+[[languages.en.menus.header]]
 name = "Resume"
 URL = "/cv"
-weight = 5
+weight = 6
 
 [[languages.en.menus.header]]
 name = "Contact"
 URL = "/#contact"
-weight = 6
+weight = 7
 
 [[languages.en.menus.footer]]
 name = "Home"
