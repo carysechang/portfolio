@@ -7,29 +7,16 @@ draft = false
 {{< showcase-section
     sectionId="home"
     title="Caryse Chang"
-    subtitle="Pre-med student exploring genetics, community health, and compassionate care"
+    subtitle="Occidental pre-med student"
     button_text="View Resume"
     button_url="/cv"
     button_icon="icon-file-text"
-    description="This website is a personal academic portfolio for me to share my interests, projects, community service, and experience."
+    about_text="Hi! I'm Caryse Chang, an incoming freshman at Occidental College majoring in Biology on the pre-med track.<br><br>I'm passionate about biology, particularly genetics and biotechnology, and have experience conducting computational biology and data science research. I enjoy exploring complex scientific questions and discovering connections across different fields.<br><br>Outside of academics, I enjoy playing the cello in orchestras and chamber ensembles, volunteering in healthcare settings, mentoring students, and running long-distance races.<br><br>Whether I'm analyzing research data, working with patients, mentoring young musicians, or training for my next race, I'm driven by a commitment to learning, service, and making a positive impact in my community."
     imgSrc="images/illustrations/caryse-profile.jpg"
     imgWidth="560"
     imgShape="circle"
 >}}
 {{< /showcase-section >}}
-
-{{< about-section
-    sectionId="about"
-    title="About"
-    content="Hi! I'm Caryse Chang, an incoming freshman at Occidental College majoring in Biology on the pre-med track.<br><br>I'm passionate about biology, particularly genetics and biotechnology, and have experience conducting computational biology and data science research. I enjoy exploring complex scientific questions and discovering connections across different fields.<br><br>Outside of academics, I enjoy playing the cello in orchestras and chamber ensembles, volunteering in healthcare settings, mentoring students, and running long-distance races.<br><br>Whether I'm analyzing research data, working with patients, mentoring young musicians, or training for my next race, I'm driven by a commitment to learning, service, and making a positive impact in my community."
-    button_icon="icon-file-text"
-    button_text="Printable CV"
-    button_url="/cv"
-    imgSrc="images/illustrations/profile.svg"
-    imgShape="rounded"
-    v_align="center"
-    h_align="left"
->}}
 
 {{< text-section sectionId="interests" title="Interests" >}}
 - Neuroscience, brain-behavior research, and patient-centered care

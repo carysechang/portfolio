@@ -87,6 +87,44 @@
   margin-bottom: 1.25rem;
 }
 
+.showcase-about-box {
+  width: 100%;
+  margin: 1rem 0 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(71, 128, 121, 0.2);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 10px 30px rgba(31, 58, 66, 0.08);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.showcase-about-box:has(.showcase-about-panel.is-expanded) {
+  border-color: rgba(71, 128, 121, 0.35);
+  box-shadow: 0 14px 36px rgba(31, 58, 66, 0.12);
+}
+
+.showcase-about-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  padding: 0.95rem 2.75rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.showcase-about-panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.45s ease;
+}
+
+.showcase-about-panel.is-expanded .showcase-hero-description {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
+
 @media (min-width: 768px) {
   .showcase-hero-photo {
     width: 300px;

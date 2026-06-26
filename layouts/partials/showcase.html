@@ -15,6 +15,7 @@
     {{- $showcaseTitle := "" -}}
     {{- $showcaseSubtitle := "" -}}
     {{- $showcaseDescription := "" -}}
+    {{- $aboutText := "" -}}
     {{- $buttonURL := "" -}}
     {{- $buttonIcon := "" -}}
     {{- $buttonText := "" -}}
@@ -29,6 +30,7 @@
       {{- $showcaseTitle = .Get "title" | default ( i18n "showcase_title" ) -}}
       {{- $showcaseSubtitle = .Get "subtitle" | default ( i18n "showcase_subtitle" ) -}}
       {{- $showcaseDescription = .Get "description" | default ( i18n "showcase_description" ) | safeHTML -}}
+      {{- $aboutText = .Get "about_text" | default $showcaseDescription | safeHTML -}}
       {{- $buttonURL = .Get "button_url" | default hugo.Data.homepage.showcase.button.URL -}}
       {{- $buttonIcon = .Get "button_icon" | default hugo.Data.homepage.showcase.button.icon -}}
       {{- $buttonText = .Get "button_text" | default false -}}
@@ -42,6 +44,7 @@
       {{- $showcaseTitle = i18n "showcase_title" -}}
       {{- $showcaseSubtitle = i18n "showcase_subtitle" -}}
       {{- $showcaseDescription = i18n "showcase_description" | safeHTML -}}
+      {{- $aboutText = $showcaseDescription -}}
       {{- $buttonURL = hugo.Data.homepage.showcase.button.URL -}}
       {{- $buttonIcon = hugo.Data.homepage.showcase.button.icon -}}
       {{- $buttonText = i18n "showcase_button" -}}
@@ -66,9 +69,28 @@
             <h2 class="display-5">
               <span>{{ $showcaseSubtitle | safeHTML }}</span>
             </h2>
+            {{ if $aboutText }}
+            <div class="showcase-about-box">
+              <button
+                type="button"
+                class="btn btn-primary showcase-about-btn"
+                data-showcase-about-toggle
+                aria-expanded="false"
+                aria-controls="about"
+              >
+                About me
+              </button>
+              <div id="about" class="showcase-about-panel" hidden>
+                <div class="lead showcase-hero-description">
+                  {{ $aboutText }}
+                </div>
+              </div>
+            </div>
+            {{ else if $showcaseDescription }}
             <div class="lead showcase-hero-description">
               {{ $showcaseDescription }}
             </div>
+            {{ end }}
             {{ if $buttonText }}
             <a
               href="{{ $buttonURL }}"
