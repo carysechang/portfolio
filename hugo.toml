@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://carysechang.github.io/portfolio/"
 title = "Caryse's Portfolio"
 languageCode = "en-us"
 disableKinds = ["taxonomy", "term"]
@@ -86,6 +86,8 @@ URL = "js/sticky-header.js"
 URL = "js/library/fontfaceobserver.js"
 [[params.plugins.js]]
 URL = "js/poster-lightbox.js"
+[[params.plugins.js]]
+URL = "js/showcase-about.js"
 
 [params.colorSchemeSwitcher]
 enable = false
