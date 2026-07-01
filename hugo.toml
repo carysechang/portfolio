@@ -143,15 +143,10 @@ URL = "/"
 weight = 1
 
 [[languages.en.menus.header]]
-name = "About"
-URL = "/#about"
-weight = 2
-
-[[languages.en.menus.header]]
 name = "Projects"
 identifier = "projects"
 URL = "/#projects"
-weight = 3
+weight = 2
 
 [[languages.en.menus.header]]
 name = "Research Papers"
@@ -168,13 +163,13 @@ weight = 2
 [[languages.en.menus.header]]
 name = "Experience"
 URL = "/#experience"
-weight = 4
+weight = 3
 
 [[languages.en.menus.header]]
 name = "More"
 identifier = "more"
 URL = "/#awards-honors"
-weight = 5
+weight = 4
 
 [[languages.en.menus.header]]
 name = "Awards & Honors"
@@ -191,12 +186,12 @@ weight = 2
 [[languages.en.menus.header]]
 name = "Resume"
 URL = "/cv"
-weight = 6
+weight = 5
 
 [[languages.en.menus.header]]
 name = "Contact"
 URL = "/#contact"
-weight = 7
+weight = 6
 
 [[languages.en.menus.footer]]
 name = "Home"
