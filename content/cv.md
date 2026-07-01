@@ -1,11 +1,13 @@
 ---
 title: "Resume"
 hideTitle: true
+aliases:
+  - /resume/
 ---
 
 <div class="resume-doc">
 
-<p class="resume-download"><a href="/files/caryse-chang-resume.pdf">Download PDF version</a></p>
+<p class="resume-download"><a href="../files/caryse-chang-resume.pdf">Download PDF version</a></p>
 
 <h1 class="resume-name">Caryse Chang</h1>
 
