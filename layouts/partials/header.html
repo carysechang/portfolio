@@ -46,9 +46,9 @@
             {{- if .HasChildren }}
             <li class="nav-item nav-dropdown-hover">
               <a
+                data-scroll
                 class="nav-link nav-dropdown-hover__trigger"
                 href="{{ .URL | relURL }}"
-                {{ if in .URL "#" }}data-scroll{{ end }}
                 aria-haspopup="true"
                 aria-expanded="false"
               >
