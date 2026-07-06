@@ -28,6 +28,7 @@
 {{- end }}
 <script defer src='{{ "js/poster-lightbox.js" | absURL }}'></script>
 <script defer src='{{ "js/showcase-about.js" | absURL }}'></script>
+<script defer src='{{ "js/nav-dropdown.js" | absURL }}'></script>
 
 {{- $bootstrapJs := resources.Get "js/vendor/bootstrap.bundle.min.js" | fingerprint | resources.Copy "/assets/js/vendor/bootstrap.bundle.min.js" }}
 <script defer src="{{ $bootstrapJs.RelPermalink }}"></script>

@@ -45,21 +45,23 @@
             {{- range .Site.Menus.header }}
             {{- if .HasChildren }}
             <li class="nav-item dropdown nav-dropdown-hover">
-              <a
-                class="nav-link nav-link-dropdown__label"
-                href="{{ .URL | relURL }}"
-                {{ if in .URL "#" }}data-scroll{{ end }}
-              >
-                {{ .Name | upper }}
-              </a>
-              <a
-                class="nav-link dropdown-toggle nav-link-dropdown__toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                aria-label='{{ printf "Open %s menu" .Name }}'
-              ><span class="visually-hidden">{{ printf "Open %s menu" .Name }}</span></a>
+              <div class="nav-dropdown-hover__group">
+                <a
+                  class="nav-link nav-link-dropdown__label"
+                  href="{{ .URL | relURL }}"
+                  {{ if in .URL "#" }}data-scroll{{ end }}
+                >
+                  {{ .Name | upper }}
+                </a>
+                <a
+                  class="dropdown-toggle nav-link-dropdown__toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  aria-label='{{ printf "Open %s menu" .Name }}'
+                ><span class="visually-hidden">{{ printf "Open %s menu" .Name }}</span></a>
+              </div>
               <ul class="dropdown-menu">
                 {{- range .Children }}
                 <li>
