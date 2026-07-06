@@ -22,6 +22,12 @@
         return;
       }
 
+      item.addEventListener("mouseenter", function () {
+        if (isDesktop()) {
+          trigger.setAttribute("aria-expanded", "true");
+        }
+      });
+
       item.addEventListener("mouseleave", function () {
         if (isDesktop()) {
           closeDropdown(item);
