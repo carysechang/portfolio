@@ -69,7 +69,7 @@
       <div class="all-experience-container">
         {{ $extra := sub $pageCount $totalCount }}
         <em>And {{ $extra }} more</em><br />
-        <a href="{{ $sectionType | relLangURL }}" class="btn btn-primary btn-all-experience">
+        <a href="{{ partial "site-link.html" $sectionType }}" class="btn btn-primary btn-all-experience">
           {{ if $isShortcode }}
             <i class="{{ $ctx.Get "button3_icon" | default "icon-arrow-right" }}"></i>
             {{ $ctx.Get "button3_text" | default (printf "View all %s" $sectionType) }}

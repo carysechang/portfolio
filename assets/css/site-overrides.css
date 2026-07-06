@@ -144,10 +144,14 @@
 }
 
 .projects-subsection-title {
-  font-size: 1.35rem;
-  font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+.section-projects .experience-list > h2.projects-subsection-title {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 }
 
 .section-projects .experience-list > .projects-subsection-title:first-child {

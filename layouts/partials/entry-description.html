@@ -57,7 +57,7 @@
   <div class="row">
     {{ if $btn1Enable }}
     <div class="col-12 col-lg-4">
-      <a href="{{ $btn1URL | relURL }}" class="btn btn-primary btn-block w-100">
+      <a href="{{ partial "site-link.html" (strings.TrimPrefix "/" $btn1URL) }}" class="btn btn-primary btn-block w-100">
         {{ with $btn1Icon }}<i class="{{ . }}"></i>{{ end }}
         {{ $btn1Text }}
         <i class="icon-arrow-right"></i>
@@ -66,7 +66,7 @@
     {{ end }}
     {{ if $btn3Enable }}
     <div class="col-12 col-lg-4">
-      <a href="{{ $btn3URL | relURL }}" class="btn btn-frameless w-100">
+      <a href="{{ partial "site-link.html" (strings.TrimPrefix "/" $btn3URL) }}" class="btn btn-frameless w-100">
         {{ with $btn3Icon }}<i class="{{ . }}"></i>{{ end }}
         {{ $btn3Text }}
       </a>

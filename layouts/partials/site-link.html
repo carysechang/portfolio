@@ -1,0 +1,6 @@
+{{- $path := strings.TrimSuffix "/" (strings.TrimPrefix "/" .) -}}
+{{- with site.GetPage $path -}}
+  {{- .RelPermalink -}}
+{{- else -}}
+  {{- $path | relURL -}}
+{{- end -}}

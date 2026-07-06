@@ -73,5 +73,5 @@ draft = false
 {{< text-section sectionId="contact" title="Contact" >}}
 - Email: [carysechang@gmail.com](mailto:carysechang@gmail.com)
 - LinkedIn: [linkedin.com/in/caryse-chang-92b24230b](https://www.linkedin.com/in/caryse-chang-92b24230b)
-- Resume: [See here](/cv)
+- Resume: [See here]({{< ref "cv" >}})
 {{< /text-section >}}
