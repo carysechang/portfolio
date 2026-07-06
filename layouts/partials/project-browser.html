@@ -114,6 +114,14 @@
         {{ else }}
         <h1>{{ $currentPage.Title }}</h1>
         {{ $currentPage.Content | safeHTML }}
+        {{ if not $isResearch }}
+        <div class="mt-4">
+          <a href="{{ partial "site-link.html" "projects/research" }}" class="btn btn-primary">
+            <i class="icon-arrow-right"></i>
+            View research papers
+          </a>
+        </div>
+        {{ end }}
         {{ end }}
       </div>
     </div>
