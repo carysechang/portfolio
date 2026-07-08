@@ -98,7 +98,7 @@ siteDescription = "A personal academic portfolio built with Hugo for a pre-med u
 
 [params.seo.person]
 name = "Caryse"
-sections = ["home", "about", "education", "experience", "projects", "interests", "awards-honors", "certifications", "contact"]
+sections = ["home", "about", "education", "experience", "projects", "interests", "awards-honors", "certifications", "skills", "contact"]
 
 [params.analytics]
 vercelPageInsights = false
@@ -182,6 +182,12 @@ name = "Certifications"
 parent = "more"
 URL = "/#certifications"
 weight = 2
+
+[[languages.en.menus.header]]
+name = "Skills"
+parent = "more"
+URL = "/#skills"
+weight = 3
 
 [[languages.en.menus.header]]
 name = "Resume"

@@ -7,7 +7,7 @@ draft = false
 {{< showcase-section
     sectionId="home"
     title="Caryse Chang"
-    subtitle="Occidental pre-med student"
+    subtitle="Biology Student • Researcher • Pre-med"
     button_text="View Resume"
     button_url="/cv"
     button_icon="icon-file-text"
@@ -68,6 +68,13 @@ draft = false
     button3_url="/certifications/"
     button3_text="View all certifications"
     button3_icon="icon-arrow-right"
+>}}
+
+{{< skills-section
+    sectionId="skills"
+    title="Skills"
+    intro_title="Technical Skills"
+    intro_description="Programming, bioinformatics, data analysis, and research skills developed through coursework, competitions, and published research."
 >}}
 
 {{< text-section sectionId="contact" title="Contact" >}}

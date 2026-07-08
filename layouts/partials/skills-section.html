@@ -1,0 +1,44 @@
+{{ $ctx := .context }}
+{{ $skills := site.Data.skills }}
+
+{{ $contextType := printf "%T" $ctx }}
+{{ $isShortcode := (eq $contextType "*hugolib.ShortcodeWithPage") }}
+
+{{ $sectionId := "skills" }}
+{{ $title := "Skills" }}
+{{ $introTitle := $skills.intro_title }}
+{{ $introDescription := $skills.intro_description | safeHTML }}
+
+{{ if $isShortcode }}
+  {{ with $ctx.Get "sectionId" }}{{ $sectionId = . }}{{ end }}
+  {{ with $ctx.Get "title" }}{{ $title = . }}{{ end }}
+  {{ with $ctx.Get "intro_title" }}{{ $introTitle = . }}{{ end }}
+  {{ with $ctx.Get "intro_description" }}{{ $introDescription = . | safeHTML }}{{ end }}
+{{ end }}
+
+<section id="{{ $sectionId }}" class="section-skills section section--border-bottom rad-animation-group flex-grow-1">
+  <div class="row flex-column-reverse flex-md-row rad-fade-down">
+    <div class="skills-list col-12 col-md-6">
+      <h2>{{ $title }}</h2>
+
+      {{ range $skills.groups }}
+      <div class="skills-group">
+        <h3 class="skills-group__title">{{ .name }}</h3>
+        <div class="skills-group__list">
+          {{ range .items }}
+          <span class="skills-group__item">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    <div class="skills-description col-12 col-md-6">
+      <div class="container-experience">
+        <div class="row">
+          <h2>{{ $introTitle }}</h2>
+          <div class="lead">{{ $introDescription }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

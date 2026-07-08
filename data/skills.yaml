@@ -1,0 +1,26 @@
+intro_title: Technical Skills
+intro_description: Programming, bioinformatics, data analysis, and research skills developed through coursework, competitions, and published research.
+groups:
+  - name: Programming
+    items:
+      - R
+      - RStudio
+  - name: Bioinformatics
+    items:
+      - GEO2R
+      - STRING-db
+      - KEGG
+      - GeneCards
+      - UCSC Genome Browser
+  - name: Data Analysis
+    items:
+      - Differential Gene Expression Analysis
+      - Transcriptomics
+      - Statistical Analysis
+      - Data Visualization
+  - name: Research
+    items:
+      - Scientific Writing
+      - Literature Review
+      - Experimental Design
+      - Science Communication
