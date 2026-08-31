@@ -15,7 +15,7 @@ params:
     src: "images/projects/health-happiness-research-poster.png"
     width: 1400
   paper:
-    src: "/files/health-happiness-research.pdf"
+    src: "files/health-happiness-research.pdf"
     label: "Full research paper"
 ---
 

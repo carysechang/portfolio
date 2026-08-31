@@ -77,16 +77,18 @@
             </div>
             {{ end }}
             {{ with $currentPage.Params.paper }}
+            {{ $paperSrc := strings.TrimPrefix "/" .src }}
+            {{ $paperURL := $paperSrc | relURL }}
             <div class="project-paper">
               <h3 class="h5">{{ .label | default "Full research paper" }}</h3>
               <p class="project-paper__actions">
-                <a href="{{ .src | relURL }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                <a href="{{ $paperURL }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                   Open PDF in new tab
                 </a>
               </p>
               <iframe
                 class="project-paper__viewer"
-                src="{{ .src | relURL }}"
+                src="{{ $paperURL }}"
                 title="{{ .label | default "Full research paper" }}"
                 loading="lazy"
               ></iframe>

@@ -18,7 +18,7 @@ params:
     - label: "Google Colab notebook"
       url: "https://colab.research.google.com/drive/1OtkFpra8LhN-IIEKRtUs9Ukaaio2S4ts?usp=sharing"
   paper:
-    src: "/files/data-science-life-expectancy.pdf"
+    src: "files/data-science-life-expectancy.pdf"
     label: "Full project report"
 ---
 

@@ -15,7 +15,7 @@ params:
     src: "images/research/community-health.svg"
     scale: 1
   paper:
-    src: "/files/type-1-diabetes-research.pdf"
+    src: "files/type-1-diabetes-research.pdf"
     label: "Full research paper"
 ---
 
