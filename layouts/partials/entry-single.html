@@ -55,6 +55,28 @@
             </a>
           </p>
           {{ end }}
+          {{ with $currentPage.Params.certificate }}
+          {{ $certSrc := strings.TrimPrefix "/" .src }}
+          {{ $certURL := $certSrc | relURL }}
+          <p class="mt-3">
+            <a href="{{ $certURL }}" class="btn btn-frameless" target="_blank" rel="noopener noreferrer">
+              {{ .label | default "View certificate" }}
+              <i class="icon-arrow-right"></i>
+            </a>
+          </p>
+          {{ end }}
+          {{ with $currentPage.Params.image }}
+          {{ $imgSrc := .src }}
+          {{ $imgWidth := .width | default 0 }}
+          {{ $imgHeight := .height | default 0 }}
+          {{ $imgScale := .scale | default 1 }}
+          <div class="entry-certificate mt-4">
+            <h3 class="h5 mb-3">Certificate of Completion</h3>
+            <div class="entry-certificate__image">
+              {{ partial "lazypicture" (dict "src" $imgSrc "width" $imgWidth "height" $imgHeight "scale" $imgScale "class" "img-responsive" "alt" (printf "%s certificate" $currentPage.Title)) }}
+            </div>
+          </div>
+          {{ end }}
         </div>
       </div>
     </div>
