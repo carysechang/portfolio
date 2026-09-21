@@ -2,10 +2,10 @@
 date: 2026-01-01
 draft: false
 title: "Alzheimer's Disease Research Paper"
-subtitle: "Journal of Emerging Investigators (JEI)"
+subtitle: "Young Scientists' Journal"
 duration: "2026"
 category: research
-publication: "Journal of Emerging Investigators"
+publication: "Young Scientists' Journal"
 params:
   button:
     icon: "icon-arrow-right"

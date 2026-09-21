@@ -6,7 +6,7 @@ organization: "Johns Hopkins University"
 duration: "2025"
 image:
   src: "images/certifications/coursera-cancer-specialization.jpg"
-  width: 1772
+  width: 1181
   height: 928
 ---
 
