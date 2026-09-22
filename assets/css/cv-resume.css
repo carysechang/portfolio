@@ -93,7 +93,11 @@ body.page-cv #content .resume-doc .resume-list ul {
 
 body.page-cv #content .resume-doc .resume-skills {
   font-size: 9pt;
-  margin: 0;
+  margin: 0 0 0.35rem;
+}
+
+body.page-cv #content .resume-doc .resume-skills:last-child {
+  margin-bottom: 0;
 }
 
 body.page-cv #content .resume-doc .resume-award-title {
